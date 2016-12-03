@@ -8,7 +8,7 @@
     tools:context="com.example.chen.dingdiangdang_android_client.LoginActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/phoneNumberEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/checkNumberEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -37,19 +37,19 @@
         android:inputType="number"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/sendCheckButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="发送验证码"
-        app:layout_constraintBottom_toBottomOf="@+id/editText2"
-        app:layout_constraintRight_toRightOf="@+id/editText2" />
+        app:layout_constraintBottom_toBottomOf="@+id/checkNumberEditText"
+        app:layout_constraintRight_toRightOf="@+id/checkNumberEditText" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -60,5 +60,5 @@
         android:text="登陆"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/checkNumberEditText" />
 </android.support.constraint.ConstraintLayout>
